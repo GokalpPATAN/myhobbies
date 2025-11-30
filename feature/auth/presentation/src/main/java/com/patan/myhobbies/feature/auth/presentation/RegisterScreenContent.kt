@@ -1,5 +1,6 @@
 package com.patan.myhobbies.feature.auth.presentation
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -16,7 +17,6 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -35,6 +35,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
+import com.patan.myhobbies.core.designsystem.theme.MyHobbiesTheme
 
 @Composable
 internal fun RegisterScreenContent(
@@ -49,7 +50,8 @@ internal fun RegisterScreenContent(
     onNavigateToLoginClick: () -> Unit
 ) {
     Scaffold(
-        snackbarHost = { SnackbarHost(hostState = snackbarHostState) }
+        snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
+        containerColor = MyHobbiesTheme.colors.background
     ) { paddingValues ->
         Box(
             modifier = Modifier
@@ -63,7 +65,11 @@ internal fun RegisterScreenContent(
                 horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.Center
             ) {
-                Text("Register", style = MaterialTheme.typography.headlineMedium)
+                Text(
+                    text = "Register",
+                    style = MyHobbiesTheme.typography.headlineMedium,
+                    color = MyHobbiesTheme.colors.primary
+                )
 
                 Spacer(modifier = Modifier.height(32.dp))
 
@@ -133,7 +139,9 @@ internal fun RegisterScreenContent(
             }
 
             if (state.isLoading) {
-                CircularProgressIndicator()
+                CircularProgressIndicator(
+                    color = MyHobbiesTheme.colors.primary
+                )
             }
         }
     }

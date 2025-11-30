@@ -6,9 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.patan.myhobbies.core.designsystem.theme.MyHobbiesAppTheme
 import com.patan.myhobbies.presentation.AppScreen
 import com.patan.myhobbies.presentation.AppScreenViewModel
-import com.patan.myhobbies.ui.theme.QuranTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         processSplashScreen()
         setContent {
-            QuranTheme {
+            MyHobbiesAppTheme {
                 AppScreen(viewModel = viewModel)
             }
         }
@@ -32,6 +32,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
-

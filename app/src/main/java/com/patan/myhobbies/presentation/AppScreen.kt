@@ -27,7 +27,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.patan.myhobbies.ui.theme.QuranTheme
 import com.patan.navigation.AppRoute
 import com.patan.navigation.HomeScreenRoute
 import com.patan.navigation.LoginScreenRoute
@@ -52,18 +51,16 @@ private fun AppScaffold(
     navigationController: NavHostController,
     state: AppScreenContract.State,
 ) {
-    QuranTheme {
-        Scaffold(
-            bottomBar = {
-                AppBottomBar(navController = navigationController)
-            }
-        ) { innerPadding ->
-            AppScreenContent(
-                navigationController = navigationController,
-                state = state,
-                innerPadding = innerPadding
-            )
+    Scaffold(
+        bottomBar = {
+            AppBottomBar(navController = navigationController)
         }
+    ) { innerPadding ->
+        AppScreenContent(
+            navigationController = navigationController,
+            state = state,
+            innerPadding = innerPadding
+        )
     }
 }
 
