@@ -1,4 +1,4 @@
-package com.patan.quranpro.di
+package com.patan.myhobbies.di
 
 import dagger.Module
 import dagger.Provides

@@ -1,4 +1,4 @@
-package com.patan.quranpro.presentation
+package com.patan.myhobbies.presentation
 
 import core.CoreState
 

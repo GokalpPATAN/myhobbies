@@ -1,4 +1,4 @@
-package com.patan.quranpro
+package com.patan.myhobbies
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,9 +6,9 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.patan.quranpro.presentation.AppScreen
-import com.patan.quranpro.presentation.AppScreenViewModel
-import com.patan.quranpro.ui.theme.QuranTheme
+import com.patan.myhobbies.presentation.AppScreen
+import com.patan.myhobbies.presentation.AppScreenViewModel
+import com.patan.myhobbies.ui.theme.QuranTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

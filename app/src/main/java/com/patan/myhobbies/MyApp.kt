@@ -1,4 +1,4 @@
-package com.patan.quranpro
+package com.patan.myhobbies
 
 import android.app.Application
 import com.google.firebase.Firebase

@@ -23,7 +23,7 @@ dependencyResolutionManagement {
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "quranpro"
+rootProject.name = "myhobbies"
 include(":app")
 
 include(":core:common")

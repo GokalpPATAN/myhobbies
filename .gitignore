@@ -307,5 +307,15 @@ Thumbs.db
 
 # Ignore build outputs inside build-logic (convention plugins)
 build-logic/**/build/
+# Gradle / build çıktıları
+**/build/
 
+# Lokal config dosyaları
+secrets.properties
+app/google-services.json
+
+# Kapt / cache vs.
+**/kapt3/
+**/build/kotlin/
+**/last-build.bin
 # End of https://www.gitignore.io/api/kotlin,android,intellij+all,androidstudio

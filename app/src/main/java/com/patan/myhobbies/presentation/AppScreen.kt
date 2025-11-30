@@ -1,12 +1,10 @@
-package com.patan.quranpro.presentation
+package com.patan.myhobbies.presentation
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.Explore
-import androidx.compose.material.icons.outlined.MenuBook
 import androidx.compose.material.icons.outlined.WatchLater
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -31,7 +29,7 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.patan.navigation.AppRoute
 import com.patan.navigation.HomeScreenRoute
-import com.patan.quranpro.ui.theme.QuranTheme
+import com.patan.myhobbies.ui.theme.QuranTheme
 
 
 @Composable

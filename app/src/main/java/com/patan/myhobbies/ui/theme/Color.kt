@@ -1,4 +1,4 @@
-package com.patan.quranpro.ui.theme
+package com.patan.myhobbies.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
