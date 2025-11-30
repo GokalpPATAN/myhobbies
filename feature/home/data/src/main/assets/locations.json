@@ -1,0 +1,332 @@
+[
+  {
+    "country": "Turkey",
+    "countryDisplay": "Türkiye",
+    "cities": [
+      {
+        "city": "Adana",
+        "display": "Adana"
+      },
+      {
+        "city": "Adiyaman",
+        "display": "Adıyaman"
+      },
+      {
+        "city": "Afyonkarahisar",
+        "display": "Afyonkarahisar"
+      },
+      {
+        "city": "Agri",
+        "display": "Ağrı"
+      },
+      {
+        "city": "Aksaray",
+        "display": "Aksaray"
+      },
+      {
+        "city": "Amasya",
+        "display": "Amasya"
+      },
+      {
+        "city": "Ankara",
+        "display": "Ankara"
+      },
+      {
+        "city": "Antalya",
+        "display": "Antalya"
+      },
+      {
+        "city": "Ardahan",
+        "display": "Ardahan"
+      },
+      {
+        "city": "Artvin",
+        "display": "Artvin"
+      },
+      {
+        "city": "Aydin",
+        "display": "Aydın"
+      },
+      {
+        "city": "Balikesir",
+        "display": "Balıkesir"
+      },
+      {
+        "city": "Bartin",
+        "display": "Bartın"
+      },
+      {
+        "city": "Batman",
+        "display": "Batman"
+      },
+      {
+        "city": "Bayburt",
+        "display": "Bayburt"
+      },
+      {
+        "city": "Bilecik",
+        "display": "Bilecik"
+      },
+      {
+        "city": "Bingol",
+        "display": "Bingöl"
+      },
+      {
+        "city": "Bitlis",
+        "display": "Bitlis"
+      },
+      {
+        "city": "Bolu",
+        "display": "Bolu"
+      },
+      {
+        "city": "Burdur",
+        "display": "Burdur"
+      },
+      {
+        "city": "Bursa",
+        "display": "Bursa"
+      },
+      {
+        "city": "Canakkale",
+        "display": "Çanakkale"
+      },
+      {
+        "city": "Cankiri",
+        "display": "Çankırı"
+      },
+      {
+        "city": "Corum",
+        "display": "Çorum"
+      },
+      {
+        "city": "Denizli",
+        "display": "Denizli"
+      },
+      {
+        "city": "Diyarbakir",
+        "display": "Diyarbakır"
+      },
+      {
+        "city": "Duzce",
+        "display": "Düzce"
+      },
+      {
+        "city": "Edirne",
+        "display": "Edirne"
+      },
+      {
+        "city": "Elazig",
+        "display": "Elazığ"
+      },
+      {
+        "city": "Erzincan",
+        "display": "Erzincan"
+      },
+      {
+        "city": "Erzurum",
+        "display": "Erzurum"
+      },
+      {
+        "city": "Eskisehir",
+        "display": "Eskişehir"
+      },
+      {
+        "city": "Gaziantep",
+        "display": "Gaziantep"
+      },
+      {
+        "city": "Giresun",
+        "display": "Giresun"
+      },
+      {
+        "city": "Gumushane",
+        "display": "Gümüşhane"
+      },
+      {
+        "city": "Hakkari",
+        "display": "Hakkari"
+      },
+      {
+        "city": "Hatay",
+        "display": "Hatay"
+      },
+      {
+        "city": "Igdir",
+        "display": "Iğdır"
+      },
+      {
+        "city": "Isparta",
+        "display": "Isparta"
+      },
+      {
+        "city": "Istanbul",
+        "display": "İstanbul"
+      },
+      {
+        "city": "Izmir",
+        "display": "İzmir"
+      },
+      {
+        "city": "Kahramanmaras",
+        "display": "Kahramanmaraş"
+      },
+      {
+        "city": "Karabuk",
+        "display": "Karabük"
+      },
+      {
+        "city": "Karaman",
+        "display": "Karaman"
+      },
+      {
+        "city": "Kars",
+        "display": "Kars"
+      },
+      {
+        "city": "Kastamonu",
+        "display": "Kastamonu"
+      },
+      {
+        "city": "Kayseri",
+        "display": "Kayseri"
+      },
+      {
+        "city": "Kilis",
+        "display": "Kilis"
+      },
+      {
+        "city": "Kirikkale",
+        "display": "Kırıkkale"
+      },
+      {
+        "city": "Kirklareli",
+        "display": "Kırklareli"
+      },
+      {
+        "city": "Kirsehir",
+        "display": "Kırşehir"
+      },
+      {
+        "city": "Kocaeli",
+        "display": "Kocaeli"
+      },
+      {
+        "city": "Konya",
+        "display": "Konya"
+      },
+      {
+        "city": "Kutahya",
+        "display": "Kütahya"
+      },
+      {
+        "city": "Malatya",
+        "display": "Malatya"
+      },
+      {
+        "city": "Manisa",
+        "display": "Manisa"
+      },
+      {
+        "city": "Mardin",
+        "display": "Mardin"
+      },
+      {
+        "city": "Mersin",
+        "display": "Mersin"
+      },
+      {
+        "city": "Mugla",
+        "display": "Muğla"
+      },
+      {
+        "city": "Mus",
+        "display": "Muş"
+      },
+      {
+        "city": "Nevsehir",
+        "display": "Nevşehir"
+      },
+      {
+        "city": "Nigde",
+        "display": "Niğde"
+      },
+      {
+        "city": "Ordu",
+        "display": "Ordu"
+      },
+      {
+        "city": "Osmaniye",
+        "display": "Osmaniye"
+      },
+      {
+        "city": "Rize",
+        "display": "Rize"
+      },
+      {
+        "city": "Sakarya",
+        "display": "Sakarya"
+      },
+      {
+        "city": "Samsun",
+        "display": "Samsun"
+      },
+      {
+        "city": "Siirt",
+        "display": "Siirt"
+      },
+      {
+        "city": "Sinop",
+        "display": "Sinop"
+      },
+      {
+        "city": "Sivas",
+        "display": "Sivas"
+      },
+      {
+        "city": "Sanliurfa",
+        "display": "Şanlıurfa"
+      },
+      {
+        "city": "Sirnak",
+        "display": "Şırnak"
+      },
+      {
+        "city": "Tekirdag",
+        "display": "Tekirdağ"
+      },
+      {
+        "city": "Tokat",
+        "display": "Tokat"
+      },
+      {
+        "city": "Trabzon",
+        "display": "Trabzon"
+      },
+      {
+        "city": "Tunceli",
+        "display": "Tunceli"
+      },
+      {
+        "city": "Usak",
+        "display": "Uşak"
+      },
+      {
+        "city": "Van",
+        "display": "Van"
+      },
+      {
+        "city": "Yalova",
+        "display": "Yalova"
+      },
+      {
+        "city": "Yozgat",
+        "display": "Yozgat"
+      },
+      {
+        "city": "Zonguldak",
+        "display": "Zonguldak"
+      }
+    ]
+  }
+]

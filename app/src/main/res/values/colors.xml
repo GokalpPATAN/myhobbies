@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#0D121C</color>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorStatusBar">#FAFAFA</color>
+</resources>
