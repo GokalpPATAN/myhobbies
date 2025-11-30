@@ -27,9 +27,11 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.patan.myhobbies.ui.theme.QuranTheme
 import com.patan.navigation.AppRoute
 import com.patan.navigation.HomeScreenRoute
-import com.patan.myhobbies.ui.theme.QuranTheme
+import com.patan.navigation.LoginScreenRoute
+import com.patan.navigation.RegisterScreenRoute
 
 
 @Composable
@@ -79,6 +81,13 @@ fun AppBottomBar(
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
 
+    val isAuthRoute = currentRoute == LoginScreenRoute::class.qualifiedName ||
+            currentRoute == RegisterScreenRoute::class.qualifiedName
+
+    if (isAuthRoute || currentRoute == null) {
+        return
+    }
+
     val items = listOf(
         BottomNavItem(
             routeClassName = HomeScreenRoute::class.qualifiedName!!,
@@ -96,7 +105,6 @@ fun AppBottomBar(
             modifier = Modifier
                 .fillMaxWidth()
                 .background(
-                    // 🔸 Transparan–gradient arası arka plan
                     brush = Brush.verticalGradient(
                         colors = listOf(
                             MaterialTheme.colorScheme.surface.copy(alpha = 0.40f),
@@ -110,7 +118,7 @@ fun AppBottomBar(
                 modifier = Modifier
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(24.dp)),
-                containerColor = Color.Transparent,   // önemli
+                containerColor = Color.Transparent,
                 tonalElevation = 0.dp
             ) {
                 items.forEach { item ->

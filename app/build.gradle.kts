@@ -91,12 +91,9 @@ dependencies {
     implementation(projects.feature.home.presentation)
     implementation(projects.feature.home.data)
     implementation(projects.feature.home.domain)
-    implementation(projects.feature.quran.presentation)
-    implementation(projects.feature.quran.data)
-    implementation(projects.feature.quran.domain)
-    implementation(projects.feature.qible.presentation)
-    implementation(projects.feature.qible.data)
-    implementation(projects.feature.qible.domain)
+    implementation(projects.feature.auth.presentation)
+    implementation(projects.feature.auth.data)
+    implementation(projects.feature.auth.domain)
 
     // AndroidX
     implementation(libs.androidx.core.splashscreen)
@@ -106,6 +103,10 @@ dependencies {
     implementation(libs.androidx.compose.material3.windowSizeClass)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.navigation.compose)
+
+    // Firebase
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
 }
 
 fun gitCommitCount(): String {
