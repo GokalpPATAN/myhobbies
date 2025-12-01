@@ -10,6 +10,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.feature.auth.data) // !!!!!! MİMARİ AÇIDAN SIKINTILI KALDIRILMASI GEREK KISA SÜRELİĞİNE EKLENDŞ
     implementation(projects.feature.auth.domain)
     implementation(projects.core.common)
     implementation(projects.core.navigation)

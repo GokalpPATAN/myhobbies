@@ -68,6 +68,7 @@ internal class AuthViewModel @Inject constructor(
 
     private fun login(email: String, pass: String) {
         authRepository.login(email, pass)
+            .requester
             .onLoading {
                 updateState { it.copy(isLoading = true) }
             }
@@ -79,7 +80,7 @@ internal class AuthViewModel @Inject constructor(
                     )
                 )
             }
-            .onSuccess { success, _, _ ->
+            .callWithSuccess { success ->
                 updateState { it.copy(isLoading = false) }
                 if (success) {
                     setSideEffect(AuthScreenContract.SideEffect.NavigateToHome)
@@ -89,7 +90,6 @@ internal class AuthViewModel @Inject constructor(
                     )
                 }
             }
-            .launchIn(viewModelScope)
     }
 
     private fun register(email: String, pass: String) {
@@ -120,6 +120,7 @@ internal class AuthViewModel @Inject constructor(
 
     private fun signInWithGoogle(idToken: String) {
         authRepository.signInWithGoogle(idToken)
+            .requester
             .onLoading {
                 updateState { it.copy(isLoading = true) }
             }
@@ -131,7 +132,7 @@ internal class AuthViewModel @Inject constructor(
                     )
                 )
             }
-            .onSuccess { success, _, _ ->
+            .callWithSuccess { success ->
                 updateState { it.copy(isLoading = false) }
                 if (success) {
                     setSideEffect(AuthScreenContract.SideEffect.NavigateToHome)
@@ -141,6 +142,5 @@ internal class AuthViewModel @Inject constructor(
                     )
                 }
             }
-            .launchIn(viewModelScope)
     }
 }

@@ -1,22 +1,18 @@
 package com.patan.myhobbies.presentation
 
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
-import com.patan.myhobbies.feature.auth.presentation.navigation.loginScreen
-import com.patan.myhobbies.feature.auth.presentation.navigation.registerScreen
 import com.patan.navigation.AppRoute
 import com.patan.navigation.HomeScreenRoute
 import com.patan.navigation.LoginScreenRoute
 import com.patan.navigation.RegisterScreenRoute
+import com.patan.myhobbies.feature.auth.presentation.navigation.loginScreen
+import com.patan.myhobbies.feature.auth.presentation.navigation.registerScreen
+import com.patan.myhobbies.feature.home.presentation.navigation.homeScreen
 
 @Composable
 internal fun AppScreenContent(
@@ -55,11 +51,11 @@ internal fun AppScreenContent(
                         navigationController.popBackStack()
                     }
                 )
-                composable<HomeScreenRoute> {
-                    Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                        Text(text = "Home Screen")
+                homeScreen(
+                    navigateToHobbyDetail = { hobbyId ->
+//                        navigationController.navigate(HobbyDetailRoute(hobbyId))
                     }
-                }
+                )
             }
         )
     }

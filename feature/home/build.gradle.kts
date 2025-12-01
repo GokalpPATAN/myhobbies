@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace =  "com.patan.feature.home"
+    namespace = "com.patan.myhobbies.feature.home"
     hilt.enableAggregatingTask = true
 }
 
